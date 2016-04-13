@@ -1,0 +1,26 @@
+<h5></h5>
+<ul>
+  <li {% if page.handle == 'home' %}class="active"{% endif %}>
+    {% link_to 'home' %}
+      Home
+    {% endlink_to %}
+  </li>
+  <li>
+    Solution
+  </li>
+  <li>
+    {% link_to 'features' %}
+      Features
+    {% endlink_to %}
+  </li>
+  <li>
+    {% link_to 'pricing' %}
+      Pricing
+    {% endlink_to %}
+  </li>
+  <li>
+    {% link_to 'trial' %}
+      Start free trial
+    {% endlink_to %}
+  </li>
+</ul>

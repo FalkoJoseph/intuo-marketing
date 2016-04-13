@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ site.name }}</title>
+    <meta name="keywords" value="{{ site.meta_keywords }}">
+    <meta name="description" value="{{ site.meta_description }}">
+    <script src="https://use.typekit.net/nhp6lhi.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    {{ 'application.css' | stylesheet_tag: 'screen, projection' }}
+  </head>
+  <body>
+
+    {% include 'header' %}
+    {% block 'main' %}{% endblock %}
+    {% include 'footer' %}
+
+    {{ 'https://code.jquery.com/jquery-2.2.3.min.js' | javascript_tag }}
+    {{ 'application' | javascript_tag }}
+  </body>
+</html>
