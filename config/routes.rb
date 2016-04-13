@@ -1,5 +1,16 @@
 Rails.application.routes.draw do
-  
+  # Custom controller for demo requests
+  # Ideally we should extend Locomotive::ContentEntriesController
+  # and provided with all necessary data, but no time :)
+  #
+  # Benefits:
+  #   - content_entries are created
+  #   - add salesforce service after content_entry creation
+  #   - redirecting is handled by locomotive liquid form helpers
+  namespace :locomotive do
+    resources :demo_requests, only: :create
+  end
+
   # Locomotive Back-office
   mount Locomotive::Engine => '/locomotive', as: 'locomotive' # you can change the value of the path, by default set to "/locomotive"
 
