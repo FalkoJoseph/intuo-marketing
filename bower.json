@@ -1,0 +1,21 @@
+{
+  "name": "INTUO marketing website",
+  "homepage": "https://github.com/FalkoJoseph/intuo-marketing",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Falko Joseph"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.3"
+  }
+}
