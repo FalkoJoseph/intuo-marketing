@@ -11,9 +11,40 @@ published: true
     <meta name="description" value="{{ site.meta_description }}" />
   </head>
   <body>
-    <h1>{{ page.title }}</h1>
+    <h1>Demo Request</h1>
     {% block 'main' %}
-    <p>Welcome to INTUO</p>
+    <form>
+      <div>
+        <label>Who do you want to train:</label>
+        <select>
+          <option value="employees">Employees</option>
+          <option value="partners">Partners</option>
+          <option value="customers">Customers</option>
+        </select>
+      </div>
+
+      <div>
+        <label>How many users:</label>
+        <select>
+          <option value="-">-</option>
+          <option value="1-100">1-100</option>
+          <option value="100-400">100-400</option>
+          <option value="400-1000">400-1000</option>
+          <option value="1000-3000">1000-3000</option>
+          <option value="+3000">+3000</option>
+        </select>
+      </div>
+
+      <div>
+        <label>Firstname:</label>
+        <input type="text" name="firstname">
+      </div>
+
+      <div>
+        <label>Firstname:</label>
+        <input type="text" name="firstname">
+      </div>
+    </form>
     {% endblock %}
   </body>
 </html>
