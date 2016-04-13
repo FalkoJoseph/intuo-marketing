@@ -1,6 +1,6 @@
-# Wagon
+# INTUO marketing website
 
-Locomotive wagon
+INTUO marketing website using LocomotiveCMS.
 
 ### Requirements
 
