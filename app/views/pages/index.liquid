@@ -13,10 +13,11 @@ published: true
   <body>
     <h1>Demo Request</h1>
     {% block 'main' %}
-    <form>
+
+    <form action="/locomotive/demo_requests" method="POST">
       <div>
         <label>Who do you want to train:</label>
-        <select>
+        <select name="demo_request[trainees]">
           <option value="employees">Employees</option>
           <option value="partners">Partners</option>
           <option value="customers">Customers</option>
@@ -25,7 +26,7 @@ published: true
 
       <div>
         <label>How many users:</label>
-        <select>
+        <select name="demo_request[useramount]">
           <option value="-">-</option>
           <option value="1-100">1-100</option>
           <option value="100-400">100-400</option>
@@ -36,15 +37,10 @@ published: true
       </div>
 
       <div>
-        <label>Firstname:</label>
-        <input type="text" name="firstname">
-      </div>
-
-      <div>
-        <label>Firstname:</label>
-        <input type="text" name="firstname">
+        <input type="submit" value="submit" name="submit">
       </div>
     </form>
+
     {% endblock %}
   </body>
 </html>
