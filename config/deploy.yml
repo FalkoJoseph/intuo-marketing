@@ -14,3 +14,9 @@
 #   password: apassword
 #   # api_key: <your api key here>
 #   # ssl: true
+
+local:
+  host: localhost:3000
+  handle: intuo
+  email: falkojoseph@gmail.com
+  api_key: d81d60e4525e89f1e7069bf2531c109db4afc4b7
