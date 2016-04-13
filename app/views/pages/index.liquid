@@ -9,6 +9,7 @@ published: true
     <title>{{ site.name }}</title>
     <meta name="keywords" value="{{ site.meta_keywords }}" />
     <meta name="description" value="{{ site.meta_description }}" />
+    {{ 'application.css' | stylesheet_tag: 'screen, projection' }}
   </head>
   <body>
     <h1>Demo Request</h1>
