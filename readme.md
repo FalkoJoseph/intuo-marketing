@@ -2,6 +2,12 @@
 
 Locomotive engine
 
+### Setup your local environment
+
+1. Add `127.0.0.1 intuo.site` to your hosts file
+2. Go to `intuo.site:3000` and create your account `intuo` as it's site name
+3. Change the access points in `intuo.site:3000/locomotive/intuo/current_site/edit` to `intuo.io` and `intuo.site`
+
 ### Requirements
 
 - [rbenv](https://github.com/rbenv/rbenv)

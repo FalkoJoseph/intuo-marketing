@@ -11,11 +11,11 @@ module Locomotive
       if @demo_request.valid?
         # Salesforce stuff here
         # root_path, locomotive_root_path
-        redirect_to '/'
+        redirect_to '/demo-request'
       else
         # Reject invalid demo
         # Redirect to ... or render with errors
-        redirect_to '/demo_requests'
+        redirect_to '/demo-request'
       end
     end
 
