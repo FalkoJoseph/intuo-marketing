@@ -5,14 +5,14 @@ Locomotive engine
 ### Setup your local environment
 
 1. Add `127.0.0.1 intuo.site` to your hosts file
-2. Go to `intuo.site:3000` and create your account `intuo` as it's site name
+2. Go to `intuo.site:3000` and create your account with `intuo` as it's site name
 3. Change the access points in `intuo.site:3000/locomotive/intuo/current_site/edit` to `intuo.io` and `intuo.site`
 
 ### Custom controller example
 
 Check out the following files
 
-- `app/controllers/locomotive/demo_requests_controller`
+- `app/controllers/locomotive/demo_requests_controller.rb`
 - `config/routes.rb`
 - `app/models/demo_request.rb`
 
