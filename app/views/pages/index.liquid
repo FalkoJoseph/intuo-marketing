@@ -1,47 +1,39 @@
 ---
-title: Home page
+title: Home
+handle: home
 published: true
 ---
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>{{ site.name }}</title>
-    <meta name="keywords" value="{{ site.meta_keywords }}" />
-    <meta name="description" value="{{ site.meta_description }}" />
-    {{ 'application.css' | stylesheet_tag: 'screen, projection' }}
-  </head>
-  <body>
-    <h1>Demo Request</h1>
-    {% block 'main' %}
 
-    <form action="/locomotive/demo_requests" method="POST">
-      <div>
-        <label>Who do you want to train:</label>
-        <select name="demo_request[trainees]">
-          <option value="employees">Employees</option>
-          <option value="partners">Partners</option>
-          <option value="customers">Customers</option>
-        </select>
-      </div>
+{% extends layouts/default %}
 
-      <div>
-        <label>How many users:</label>
-        <select name="demo_request[useramount]">
-          <option value="-">-</option>
-          <option value="1-100">1-100</option>
-          <option value="100-400">100-400</option>
-          <option value="400-1000">400-1000</option>
-          <option value="1000-3000">1000-3000</option>
-          <option value="+3000">+3000</option>
-        </select>
-      </div>
+{% block main %}
+  <h1>Home</h1>
 
-      <div>
-        <input type="submit" value="submit" name="submit">
-      </div>
-    </form>
+  <form action="/locomotive/demo_requests" method="POST">
+    <div>
+      <label>Who do you want to train:</label>
+      <select name="demo_request[trainees]">
+        <option value="employees">Employees</option>
+        <option value="partners">Partners</option>
+        <option value="customers">Customers</option>
+      </select>
+    </div>
 
-    {% endblock %}
-  </body>
-</html>
+    <div>
+      <label>How many users:</label>
+      <select name="demo_request[useramount]">
+        <option value="-">-</option>
+        <option value="1-100">1-100</option>
+        <option value="100-400">100-400</option>
+        <option value="400-1000">400-1000</option>
+        <option value="1000-3000">1000-3000</option>
+        <option value="+3000">+3000</option>
+      </select>
+    </div>
+
+    <div>
+      <input type="submit" value="submit" name="submit">
+    </div>
+  </form>
+{% endblock %}
+>>>>>>> wip
