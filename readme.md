@@ -8,6 +8,14 @@ Locomotive engine
 2. Go to `intuo.site:3000` and create your account `intuo` as it's site name
 3. Change the access points in `intuo.site:3000/locomotive/intuo/current_site/edit` to `intuo.io` and `intuo.site`
 
+### Custom controller example
+
+Check out the following files
+
+- `app/controllers/locomotive/demo_requests_controller`
+- `config/routes.rb`
+- `app/models/demo_request.rb`
+
 ### Requirements
 
 - [rbenv](https://github.com/rbenv/rbenv)
